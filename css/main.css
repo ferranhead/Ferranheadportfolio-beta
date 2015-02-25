@@ -193,7 +193,7 @@ p {
 	width: 70%;
 	margin: 0 auto;
 	font-size: 110px;
-	font-size: 7vw; 
+	/*font-size: 7vw;*/ 
 	/*color: / #A4B3B8 / #957e5e / #A28F2B */
 	/*color: #E2EEF2;*/
 	color: #fff;
@@ -213,7 +213,7 @@ p {
 	.h1 { width: 80%; font-size: 80px;}
 }
 @media (max-width: 639px) {
-	.h1 { width: 90%; font-size: 60px; margin: 0 auto;}
+	.h1 { width: 90%; font-size: 49px; margin: 0 auto;}
 }
 
 .statement {
@@ -222,8 +222,8 @@ p {
 	text-align: center;
 	vertical-align: middle;
 	font-family: 'Copernicus';
-	font-size: 18px;
-	font-size: 1.8vw;
+	font-size: 20px;
+	/*font-size: 1.8vw;*/
 	color: #A6A6A6;
 	font-weight: 700;
 	font-style: italic;
@@ -235,15 +235,16 @@ p {
 	transition: all .3s ease-in;
 }
 @media (max-width: 640px) {
-	.statement { font-size: 20px; width: 70%; margin: 0 auto; line-height: 1.6em;}
+	.statement { font-size: 18px; width: 70%; margin: 0 auto; line-height: 1.6em;}
 }
 
 @media (min-width: 640px) and (max-width: 900px) {
-	.statement { font-size: 18px;}
+	.statement { font-size: 20px;}
 }
 
 @media (min-width: 1460px) {
-	.statement { font-size: 1.5vw;}
+	.statement {font-size: 24px;}
+	/*.statement { font-size: 1.5vw;}*/
 }
 
 
@@ -261,7 +262,7 @@ p {
 
 .h2{
 	font-size: 30px;
-	font-size: 2.5vw; 
+/*	font-size: 2.5vw; */	
 	text-align: center;
 
 }
@@ -274,13 +275,13 @@ p {
 
 #about {
 	height: 100%;
-	/*max-height: 800px;*/
+	max-height: 2000px;
 	padding-bottom: 0px;
 }
 
-/*@media (min-width: 1440px) {
-	#about { height: 80%; }
-}*/
+@media (min-width: 1440px) {
+	#about { height: 850px; }
+}
 
 .about-content {
 	width: 60%;
@@ -1063,7 +1064,7 @@ p {
 	width: 70%;
 	margin: 0 auto;
 	font-size: 80px;
-	font-size: 5vw;
+	/*font-size: 5vw;*/
 	color: #fff;
 	text-align: center;
 	vertical-align: middle;
