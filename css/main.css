@@ -752,6 +752,18 @@ list-style-type: none;
 	.experience-content { width: 80%; }
 }
 
+@media (min-width: 1500px) {
+	.experience-content { width: 50%; }
+}
+
+.experience-text {
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media (min-width: 1650px) {
+	.experience-text { width: 80%; margin: 0 auto;}
+}
 
 .skills {
 	margin-top: 50px;
