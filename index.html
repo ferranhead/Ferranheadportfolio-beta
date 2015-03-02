@@ -54,24 +54,6 @@
 		</script>
 
 
-		<script>
-			$(function() {
-			  $('a[href*=#]:not([href=#])').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			      var target = $(this.hash);
-			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			      if (target.length) {
-			        $('html,body').animate({
-			          scrollTop: target.offset().top
-			        }, 1000, "swing");
-			        return false;
-			      }
-			    }
-			  });
-			});
-		</script>
-
-
 		<style type="text/css">
 
 			/* Loader background*/
@@ -128,17 +110,16 @@
 					<li><a class="menu-section"  href="#contact" >Contact</a></li>
 				</ul>
 			</div>
-			<a href="#" id="trigger-nav" class="burger-menu" type="button"></a>
+			<a id="trigger-nav" class="burger-menu" type="button"></a>
 			
 		</nav>
 		<div class="menu-overlay overlay-slidedown">
-			<button type="button" class="menu-overlay-close">Close</button>
 			<nav>
 				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about" class="nav-btn">About</a></li>
+					<li><a href="#work" class="nav-btn">Work</a></li>
+					<li><a href="#experience" class="nav-btn">Experience</a></li>
+					<li><a href="#contact" class="nav-btn">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -347,29 +328,42 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-		<!--<script src="js/classie.js"></script> -->
-		<!--<script src="js/menu-nav.js"></script> -->
-
-		
+		<script type="text/javascript">
+			$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000, "swing");
+			        return false;
+			      }
+			    }
+			  });
+			});
+		</script>
 
 		<script type="text/javascript">
 			$ (document).ready(function(){
+				$("#trigger-nav").click(function(){
+					$(".overlay-slidedown").toggleClass("open");
+				});
 
-				var menu = "close";
+				$(".nav-btn").click(function(){
+					$(".overlay-slidedown").removeClass("open");
+				});
 
-				$('#trigger-nav').click(function() {
+				$("#trigger-nav,.nav-btn").click(function(){
+					$("body").toggleClass("no-scroll-nav");
+				});
 
-
-					if (menu == 'close') {
-						$('overlay-slidedown').css('-webkit-transform', 'translateY(0%)');
-						menu = ".overlay-slidedown.open";
-					} else { 
-						$('overlay-slidedown').css('-webkit-transform', 'translateY(50%)');
-						menu = ".overlay-slidedown";
-					}
-
-			});
+				/*$("#trigger-nav").click(function(){
+					$(".burger-menu").toggleClass("burger-menu-active");
+				});*/
 				
+			});
 		</script>
 
 	</body>

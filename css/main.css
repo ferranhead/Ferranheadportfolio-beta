@@ -15,12 +15,15 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	text-shadow: none;
-	
 
 
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	
+}
+
+.no-scroll-nav {
+	overflow: hidden;
 }
 
 p {
@@ -155,93 +158,19 @@ list-style-type: none;
 	    0 0.9em 0 0 white;
 }
 
-/*OPEN & CLOSE MOBILE MENU*/
-
-/*.menu-overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(153,204,51,0.9);
-}
-
-.menu-overlay .menu-overlay-close {
-	width: 80px;
-	height: 80px;
+/*.burger-menu-active {
+	content: "";
 	position: absolute;
-	right: 20px;
-	top: 20px;
-	overflow: hidden;
-	border: none;
-	background: url(../img/cross.png) no-repeat center center;
-	text-indent: 200%;
-	color: transparent;
-	outline: none;
-	z-index: 100;
-}
-
-.menu-overlay nav {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	height: 60%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-.menu-overlay ul {
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
-	display: inline-block;
-	height: 100%;
-	position: relative;
-}
-
-.menu-overlay ul li {
-	display: block;
-	height: 20%;
-	height: calc(100% / 5);
-	min-height: 54px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.menu-overlay ul li a {
-	font-size: 54px;
-	font-weight: 300;
-	display: block;
-	color: #fff;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
-}
-
-.menu-slidedown {
-	visibility: hidden;
-	-webkit-transform: translateY(-100%);
-	transform: translateY(-100%);
-	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
-	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
-}
-
-.menu-slidedown.open {
-	visibility: visible;
-	-webkit-transform: translateY(0%);
-	transform: translateY(0%);
-	-webkit-transition: -webkit-transform 0.4s ease-in-out;
-	transition: transform 0.4s ease-in-out;
-}
-
-@media screen and (max-height: 30.5em) {
-	.menu-overlay nav {
-		height: 70%;
-		font-size: 34px;
-	}
-	.menu-overlay ul li {
-		min-height: 34px;
-	}
+	left: 0;
+	top: 1.3em;
+	width: 1.5em;
+	height: 0.2em;
+	background: red;
+	box-shadow: 
+	    0 0.45em 0 0 red,
+	    0 0.9em 0 0 red;
 }*/
+
 
 /* Overlay style */
 .menu-overlay {
@@ -254,21 +183,6 @@ list-style-type: none;
 	z-index: 10;
 }
 
-/* Overlay closing cross */
-.menu-overlay .menu-overlay-close {
-	width: 80px;
-	height: 80px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	overflow: hidden;
-	border: none;
-	background: url(../img/cross.png) no-repeat center center;
-	text-indent: 200%;
-	color: transparent;
-	outline: none;
-	z-index: 100;
-}
 
 /* Menu style */
 .menu-overlay nav {
@@ -326,7 +240,7 @@ list-style-type: none;
 	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
 }
 
-.overlay-slidedown.open {
+.open {
 	visibility: visible;
 	-webkit-transform: translateY(0%);
 	transform: translateY(0%);
@@ -376,9 +290,6 @@ list-style-type: none;
 	height: 100%;
 	display: block;
 	position: relative;
-	clear: both;
-	float: left;
-
 }
 
 .hero-wrapper {
@@ -486,8 +397,6 @@ list-style-type: none;
 	width: 100%;
 	background-color: #fff;
 	z-index: 1;
-	float: left;
-	/*padding-bottom: 120px;*/
 }
 
 .h2{
@@ -504,14 +413,16 @@ list-style-type: none;
 /* ABOUT SECTION */
 
 #about {
-	height: 100%;
-	max-height: 2000px;
-	padding-bottom: 0px;
+	padding-bottom: 10%;
 }
 
-@media (min-width: 1440px) {
-	#about { height: 850px; }
+@media (min-width: 1600px) {
+	#about { padding-bottom: 15%;}
 }
+
+/*@media (min-width: 1440px) {
+	#about { height: 850px; }
+}*/
 
 .about-content {
 	width: 60%;
@@ -542,10 +453,8 @@ list-style-type: none;
 	margin-right: 50px;
 	float: left;
 	width: 50%;
-	height: 50%;
-	max-width: 500px;
-	max-height: 400px;
-
+	padding-top: 50%;
+	
 	background-color: black;
 }
 
@@ -1109,7 +1018,7 @@ list-style-type: none;
 
 .contact-bg {
 	width: 100%;
-	height: 100%;
+	/*height: 100%;*/
 	
 	background-image: url(../img/home/Ferran-Web-82-.jpg);
 	background-repeat: no-repeat;
@@ -1120,7 +1029,7 @@ list-style-type: none;
 	background-position: top center;
 }
 @media (min-width: 460px) {
-	.contact-bg { padding-bottom: 0px; }
+	.contact-bg { padding-bottom: 90px; }
 }
 
 .contact-content {
@@ -1136,6 +1045,10 @@ list-style-type: none;
 }
 @media (max-width: 768px) {
 	.contact-content { width: 80%; }
+}
+
+@media (min-width: 1600px) {
+	.contact-content { width: 50%; padding-top: 120px; padding-bottom: 90px;}
 }
 
 .mail-contact {
