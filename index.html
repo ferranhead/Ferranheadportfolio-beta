@@ -41,8 +41,11 @@
 		<link rel="author" href="https://plus.google.com/u/0/109316039774237054303/about">
 
 		<!-- SCRIPTS -->
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js" async></script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js" ></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 
 		<script>
 		    $(window).load(function() {
@@ -97,6 +100,8 @@
 
 		</style>
 
+		<!-- <script src="js/modernizr.custom.js"></script> -->
+
 	</head>
 
 	<body>
@@ -114,19 +119,32 @@
 
 		
 		<!--MENU-->
-		<div class="main-nav">
-			<div class="navigation">
+		<nav class="main-nav">
+			<div class="navigation-desktop">
 				<ul class="menu-items">
-					<li><a class="menu-section" href="#about" onmousedown="autoScrollTo('about');">About</a></li>
-					<li><a class="menu-section"  href="#work" onmousedown="autoScrollTo('work');">Work</a></li>
-					<li><a class="menu-section" href="#experience" onmousedown="autoScrollTo('experience');">Experience</a></li>
-					<li><a class="menu-section"  href="#contact" onmousedown="autoScrollTo('contact');">Contact</a></li>
+					<li><a class="menu-section" href="#about" >About</a></li>
+					<li><a class="menu-section"  href="#work" >Work</a></li>
+					<li><a class="menu-section" href="#experience" >Experience</a></li>
+					<li><a class="menu-section"  href="#contact" >Contact</a></li>
 				</ul>
 			</div>
+			<a href="#" id="trigger-nav" class="burger-menu" type="button"></a>
+			
+		</nav>
+		<div class="menu-overlay overlay-slidedown">
+			<button type="button" class="menu-overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 		</div>
 
 		<!--LOGO-->
-		<a class="main-logo" href="#top-home" onmousedown="autoScrollTo('about');"></a>
+		<a class="main-logo" href="#top-home" ></a>
 
 		<!--HERO-->
 		<div class="home-wrapper"  id="top-home">
@@ -326,6 +344,33 @@
 		<div class="footer">
 			<p class="footer-credits">Hand coded and crafted with love by Ferran Gimeno (ferranhead) ®2015</p>
 		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<!--<script src="js/classie.js"></script> -->
+		<!--<script src="js/menu-nav.js"></script> -->
+
+		
+
+		<script type="text/javascript">
+			$ (document).ready(function(){
+
+				var menu = "close";
+
+				$('#trigger-nav').click(function() {
+
+
+					if (menu == 'close') {
+						$('overlay-slidedown').css('-webkit-transform', 'translateY(0%)');
+						menu = ".overlay-slidedown.open";
+					} else { 
+						$('overlay-slidedown').css('-webkit-transform', 'translateY(50%)');
+						menu = ".overlay-slidedown";
+					}
+
+			});
+				
+		</script>
 
 	</body>
 
