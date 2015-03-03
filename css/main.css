@@ -317,8 +317,8 @@ list-style-type: none;
 } 
 
 .black-overlay {
-	width: 100%;
-	height: 100%;
+	/*width: 100%;
+	height: 100%;*/
 	background-color: rgba(0,0,0,0.3);
 }
 
@@ -1037,7 +1037,7 @@ list-style-type: none;
 }*/
 
 @media (min-width: 1024px){
-	.contact-bg {padding-bottom: 0px;}
+	.contact-bg {padding-bottom: 50px;}
 }
 
 @media (max-width: 640px){
@@ -1060,7 +1060,7 @@ list-style-type: none;
 }
 
 @media (min-width: 1600px) {
-	.contact-content { width: 50%; padding-top: 120px; padding-bottom: 90px;}
+	.contact-content { width: 40%; padding-top: 120px; padding-bottom: 90px;}
 }
 
 .mail-contact {
