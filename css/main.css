@@ -191,8 +191,6 @@ list-style-type: none;
 	position: relative;
 	top: 25%;
 	height: 60%;
-	/*-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);*/
 }
 
 .menu-overlay ul {
@@ -218,7 +216,7 @@ list-style-type: none;
 	font-weight: 300;
 	display: block;
 	/*color: #fff;*/
-	color: #6d6d6d;
+	color: #fff;
 	text-decoration: none;
 
 
@@ -226,10 +224,10 @@ list-style-type: none;
 	transition: color 0.2s;
 }
 
-.menu-overlay ul li a:hover,
+/*.menu-overlay ul li a:hover,
 .menu-overlay ul li a:focus {
 	color: #fff;
-}
+}*/
 
 /* Effects */
 .overlay-slidedown {
@@ -270,6 +268,10 @@ list-style-type: none;
 	position: relative;
 	float: left;
 }
+
+@media (max-width: 640px){
+	.footer { height: 75px; }
+} 
 
 .footer-credits {
 	text-align: center;
@@ -317,7 +319,7 @@ list-style-type: none;
 .black-overlay {
 	width: 100%;
 	height: 100%;
-	/*background-color: rgba(0,0,0,0.3);*/
+	background-color: rgba(0,0,0,0.3);
 }
 
 
@@ -526,9 +528,10 @@ list-style-type: none;
 	-o-justify-content: space-between;
 
 	
-	padding-top: 20px;
+	/*padding-top: 20px;
 	padding-right: 40px;
-	padding-left: 40px;
+	padding-left: 40px;*/
+	padding: 20px 40px 40px 40px;
 	max-width: 1280px;
 	margin: 0 auto;
 
@@ -945,6 +948,10 @@ list-style-type: none;
 	min-height: 100px;
 }
 
+@media (max-width: 640px) {
+	.skill-design { margin-bottom: 0px; min-height: 50px;}
+}
+
  .skill-title {
  	font-family: "Copernicus";
  	font-style: italic;
@@ -1012,14 +1019,10 @@ list-style-type: none;
 }
 
 
-
-
 /* CONTACT SECTION */
 
 .contact-bg {
 	width: 100%;
-	/*height: 100%;*/
-	
 	background-image: url(../img/home/Ferran-Web-82-.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1027,9 +1030,18 @@ list-style-type: none;
 	top: 0;
 	overflow: hidden;
 	background-position: top center;
+	padding-bottom: 90px;
 }
-@media (min-width: 460px) {
+/*@media (max-width: 600px) {
 	.contact-bg { padding-bottom: 90px; }
+}*/
+
+@media (min-width: 1024px){
+	.contact-bg {padding-bottom: 0px;}
+}
+
+@media (max-width: 640px){
+	.contact-bg {padding-bottom: 200px;}
 }
 
 .contact-content {
