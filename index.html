@@ -91,8 +91,8 @@
 		<div class="theme-wrapper">
 			<!--HERO-->
 			<div class="home-wrapper"  id="top-home">
-				<div class="hero-wrapper"><span class="black-overlay"></span>
-					<div class= "main-title black-overlay">
+				<div class="hero-wrapper">
+					<div class= "main-title">
 						<div class= "h1 title-animation">Welcome to ferranhead</div>
 						<div class= "statement">Web designer | Motiongrapher | Guitarist</div>
 					</div>
@@ -140,7 +140,7 @@
 							<a class="work-link" href="#">View more</a>
 						</div>
 					</div>
-					<div class="thumb thumb3">
+					<div class="thumb thumb3" style="background-image: url(img/home/thumb-works/w3.jpg);">
 						<div class="info-thumb">
 							<h2 class="title-work">Save the Children</h2>
 							<span class="work-icons icon1"></span>
@@ -150,7 +150,7 @@
 							<a class="work-link" href="#">View more</a>
 						</div>
 					</div>
-					<div class="thumb thumb4">
+					<div class="thumb thumb4" style="background-image: url(img/home/thumb-works/w4.jpg);">
 						<div class="info-thumb">
 							<h2 class="title-work">Red Bull Bedroom Jam '13</h2>
 							<span class="work-icons icon1"></span>
@@ -160,7 +160,7 @@
 							<a class="work-link" href="#">View more</a>
 						</div>
 					</div>
-					<div class="thumb thumb5">
+					<div class="thumb thumb5" style="background-image: url(img/home/thumb-works/w5.jpg);">
 						<div class="info-thumb">
 							<h2 class="title-work">Leeds Beckett University</h2>
 							<span class="work-icons icon1"></span>
@@ -170,7 +170,7 @@
 							<a class="work-link" href="#">View more</a>
 						</div>
 					</div>
-					<div class="thumb thumb6 col_25">
+					<div class="thumb thumb6 col_25" style="background-image: url(img/home/thumb-works/w6.jpg);">
 						<div class="info-thumb">
 							<h2 class="title-work">Manel Video Clip</h2>
 							<span class="work-icons icon1"></span>
@@ -180,7 +180,7 @@
 							<a class="work-link" href="#">View more</a>
 						</div>
 					</div>
-					<div class="thumb thumb7 col_75">
+					<div class="thumb thumb7 col_75" style="background-image: url(img/home/thumb-works/w7.jpg);">
 						<div class="info-thumb">
 							<h2 class="title-work">Expedia</h2>
 							<span class="work-icons icon1"></span>
@@ -190,7 +190,7 @@
 							<a class="work-link" href="#">View more</a>
 						</div>
 					</div>
-					<div class="thumb thumb8">
+					<div class="thumb thumb8" style="background-image: url(img/home/thumb-works/w8.jpg);">
 						<div class="info-thumb">
 							<h2 class="title-work">Bolot App</h2>
 							<span class="work-icons icon1"></span>
@@ -200,7 +200,7 @@
 							<a class="work-link" href="#">View more</a>
 						</div>
 					</div>
-					<div class="thumb thumb9">
+					<div class="thumb thumb9" style="background-image: url(img/home/thumb-works/w9.jpg);">
 						<div class="info-thumb">
 							<h2 class="title-work">Behance Projects</h2>
 							<span class="work-icons icon1"></span>
@@ -210,7 +210,7 @@
 							<a class="work-link" href="#">View more</a>
 						</div>
 					</div>
-					<div class="thumb thumb10">
+					<div class="thumb thumb10" style="background-image: url(img/home/thumb-works/w10.jpg);">
 						<div class="info-thumb">
 							<h2 class="title-work">Dribbble Projects</h2>
 							<span class="work-icons icon1"></span>
@@ -273,7 +273,7 @@
 
 
 			<!--CONTACT SECTION -->
-			<div class="black-overlay page-section contact-bg">
+			<div class="page-section contact-bg">
 				<div class="contact-content" id="contact">
 					<h2 class="h2">Contact ferranhead</h2>
 					<p class="paragraph-margins">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit ultrices volutpat. Sed auctor ac diam vel lobortis. Proin eu laoreet tellus, nec interdum felis. Proin congue fermentum mi, ut pellentesque erat consequat eget. Mauris id magna arcu. Etiam id convallis orci.</p>
@@ -293,14 +293,15 @@
 		<div class="loader">
 		    <div class="table">
 		        <div class="cell">
-		            <img src="pages/Preloader_1.gif">
+		            <!-- <img src="pages/Preloader_1.gif"> -->
+		            <!-- <img src="pages/ajax-loader.gif"> -->
+		            <img src="pages/728.gif">
 		            <p style="color: white;">Loading...</p>
 		        </div>
 		    </div>
 		</div>
 
 
-		
 		<!--MENU-->
 		<div class="menu-overlay overlay-slidedown">
 			<nav>
@@ -322,9 +323,14 @@
 				</ul>
 			</div>
 			<a id="trigger-nav" class="burger-menu" type="button"></a>
-			<!--LOGO-->
-			<a class="main-logo" href="#top-home" ></a>
 		</nav>
+
+
+
+		<!--LOGO-->
+		<a class="main-logo" href="#top-home" ></a>
+
+
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -370,10 +376,6 @@
 					e.preventDefault();
 					return false;
 				}
-
-				/*$("#trigger-nav").click(function(){
-					$(".burger-menu").toggleClass("burger-menu-active");
-				});*/
 				
 			});
 		</script>
