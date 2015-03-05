@@ -696,6 +696,7 @@ list-style-type: none;
 	.thumb8 {width: 33%;}
 	.thumb9 {width: 50%;}
 	.thumb10 {width: 50%;}
+	.info-work { font-size: 18px; bottom: calc(8em - 75px);}
 }
 
 @media (max-width: 1024px) {
@@ -842,6 +843,7 @@ list-style-type: none;
 
  .skill-title {
  	font-family: "Copernicus";
+ 	font-size: 18px;
  	font-style: italic;
  	font-weight: 500;
  }
