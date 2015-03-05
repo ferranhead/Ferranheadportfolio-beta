@@ -683,6 +683,21 @@ list-style-type: none;
 	margin: 0 auto;
 }
 
+/*Columns for thumb projects*/
+
+@media (min-width: 1025px) {
+	.thumb1 {width: 66%;}
+	.thumb2 {width: 34%;}
+	.thumb3 {width: 25%;}
+	.thumb4 {width: 50%;}
+	.thumb5 {width: 25%;}
+	.thumb6 {width: 33%;}
+	.thumb7 {width: 33%;}
+	.thumb8 {width: 33%;}
+	.thumb9 {width: 50%;}
+	.thumb10 {width: 50%;}
+}
+
 @media (max-width: 1024px) {
 	.icon1 { display: none; }
 	.icon2 { display: none; }
@@ -691,10 +706,15 @@ list-style-type: none;
 	.thumb {margin-right: 10px; margin-left: 10px; margin-bottom: 20px; margin-top: 0px;}
 
 	.info-thumb { top: 140px; transform: translate3d (0,0,0); -webkit-transform: translate3d (0,0,0); }
+
+	.thumb1 {width: 47.5%;}
+	.thumb2 {width: 47.5%;}
+	.thumb3 {width: 100%;}
+	.thumb7 {width: 50%;}
+	.thumb8 {width: 33%;}
+	.thumb9 {width: 33%;}
+	.thumb10 {width: 33%;}
 }
-
-
-/*Columns for thumb projects*/
 
 @media (min-width: 901px) and (max-width: 1020px) {
 	.thumb1{ width: 46% !important; }
@@ -709,8 +729,11 @@ list-style-type: none;
 }
 
 @media (min-width: 769px) and (max-width: 900px) {
-	.col_75 { width: 75%; }
-	.col_25 { width: 25%; }
+	.thumn1 { width: 75%; }
+	.thumb7 { width: 75%; }
+	.thumb2 { width: 25%; }
+	.thumb6 { width: 25%; }
+
 	
 
 	.thumb { width: 33.33%; }
@@ -1075,8 +1098,6 @@ list-style-type: none;
 	width: 100%;
 	height: 70%;
 	min-height: 500px;
-	background: -webkit-linear-gradient(#CC57BE, #A5DFC5);
-	background-image: url(../img/projects/project-hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	right: 0;
@@ -1091,7 +1112,6 @@ list-style-type: none;
 	width: 70%;
 	margin: 0 auto;
 	font-size: 80px;
-	/*font-size: 5vw;*/
 	color: #fff;
 	text-align: center;
 	vertical-align: middle;

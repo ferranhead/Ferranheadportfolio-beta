@@ -41,8 +41,11 @@
 		<link rel="author" href="https://plus.google.com/u/0/109316039774237054303/about">
 
 		<!-- SCRIPTS -->
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js" async></script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js" ></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 
 		<script>
 		    $(window).load(function() {
@@ -50,22 +53,6 @@
 		    })
 		</script>
 
-		<script>
-			$(function() {
-			  $('a[href*=#]:not([href=#])').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			      var target = $(this.hash);
-			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			      if (target.length) {
-			        $('html,body').animate({
-			          scrollTop: target.offset().top
-			        }, 1000, "swing");
-			        return false;
-			      }
-			    }
-			  });
-			});
-		</script>
 
 		<style type="text/css">
 
@@ -95,107 +82,168 @@
 
 		</style>
 
+		<!-- <script src="js/modernizr.custom.js"></script> -->
+
 	</head>
 
 	<body>
 
-		<!-- PRELOADER -->
-		<div class="loader">
-		    <div class="table">
-		        <div class="cell">
-		            <img src="../pages/Preloader_1.gif">
-		            <p style="color: white;">Loading...</p>
-		        </div>
-		    </div>
-		</div>
-
-
-		
-		<!--MENU-->
-		<div class="main-nav">
-			<div class="navigation">
-				<ul class="menu-items">
-					<li><a class="menu-section" href="#about" onmousedown="autoScrollTo('about');">About</a></li>
-					<li><a class="menu-section"  href="#work" onmousedown="autoScrollTo('work');">Work</a></li>
-					<li><a class="menu-section" href="#experience" onmousedown="autoScrollTo('experience');">Experience</a></li>
-					<li><a class="menu-section"  href="#contact" onmousedown="autoScrollTo('contact');">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-
-		<!--LOGO-->
-		<a class="main-logo" href="../index.html"></a>
-
 		<!-- WORK PAGE -->
 
 		<!--HERO-->
-		<div class="project-wrapper">
-			<div class="hero-project-wrapper"><span class="black-overlay"></span>
-				<div class= "main-title black-overlay">
-					<div class= "main-project-title  title-animation">Name of the project</div>
-					<div class= "statement statement-animation">Lorem ipsum dolor sit amet</div>
+
+		<div class="theme-wrapper">
+			<div class="project-wrapper">
+				<div class="hero-project-wrapper" style="background-image: url(../img/projects/project-hero.jpg);">
+					<div class= "main-title">
+						<div class= "main-project-title  title-animation">Name of the project</div>
+						<div class= "statement statement-animation">Lorem ipsum dolor sit amet</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="page-section">
+				<div class="project-content">
+					<h2 class="h2">Project title presentation</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non eros erat. Phasellus varius leo eu egestas pellentesque. Vestibulum congue sem non placerat efficitur. Ut tincidunt ex nec convallis vulputate. Proin cursus in felis et congue. </p>
+
+					<div class="video-container">
+
+								<center><iframe src="http://player.vimeo.com/video/69817999?color=f2bc27 &title=0&byline=0&portrait=0" width="850" height="478" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+					</div>
+
+					<p>Praesent nec suscipit tellus, et vestibulum neque. Nullam rutrum, turpis eget faucibus fringilla, elit ligula dapibus est, eu tristique lectus diam consequat est. Quisque pulvinar quis justo sed pharetra. Donec mattis, nunc vel mattis tristique, dolor nibh laoreet dui, eget interdum velit justo sit amet neque. Vivamus justo justo, iaculis vel blandit ut, pulvinar a nulla. Donec non convallis mi. Aliquam consectetur diam eget lectus posuere, vitae finibus diam euismod. Nulla tempor aliquet nisi sed gravida.</p>
+					<p>Phasellus viverra lorem at laoreet rutrum. Quisque iaculis gravida imperdiet. Pellentesque augue dui, posuere in dolor non, suscipit facilisis erat. Sed condimentum dignissim nisl, eu porta velit venenatis id. </p>
+
+					<br><br>
+
+					<img class="project-image" src="../img/projects/project-hero.jpg"></img>
+
+					<h2 class="h2">First steps stage</h2>
+					<p>Praesent nec suscipit tellus, et vestibulum neque. Nullam rutrum, turpis eget faucibus fringilla, elit ligula dapibus est, eu tristique lectus diam consequat est. Quisque pulvinar quis justo sed pharetra. Donec mattis, nunc vel mattis tristique, dolor nibh laoreet dui, eget interdum velit justo sit amet neque. Vivamus justo justo, iaculis vel blandit ut, pulvinar a nulla. Donec non convallis mi. Aliquam consectetur diam eget lectus posuere, vitae finibus diam euismod. Nulla tempor aliquet nisi sed gravida.</p>
+				</div>
+				<div class="project-credits">
+					
+					<h4 class="title-credits">Role</h4>
+					<p class="credit-details">Design, UX, Front End prototyping</p>
+					<h4 class="title-credits">Team involved</h4>
+					<p class="credit-details">Damon Mangos, Stephen Horner, Ferran Gimeno, Tom Dougherty</p>
+					<h4 class="title-credits">Agency</h4>
+					<p class="credit-details">Delete</p>
+					<h4 class="title-credits">Year</h4>
+					<p class="credit-details">2014</p>
+
+				</div>
+			</div>
+
+			<!-- RELATED PROJECTS -->
+				<div class="related-projects">
+					<h2>Related projects</h2>
+					<div class="related-projects-wrapper">
+						<li data-content="Text added on hover" class="related-project">
+							<!-- <img src="#"> Introduce image source--> 
+							<!-- <div class="overlay"></div> -->
+						</li>
+						<li class="related-project"></li>
+						<li class="related-project last-related"></li>
+					</div>
 				</div>
 
+			<!-- FOOTER -->
+			<div class="footer">
+				<p class="footer-credits">Hand coded and crafted with love by Ferran Gimeno (ferranhead) ®2015</p>
 			</div>
+
+					<!-- PRELOADER -->
+			<div class="loader">
+			    <div class="table">
+			        <div class="cell">
+			            <!-- <img src="pages/Preloader_1.gif"> -->
+			            <!-- <img src="pages/ajax-loader.gif"> -->
+			            <img src="728.gif">
+			            <p style="color: white;">Loading...</p>
+			        </div>
+			    </div>
+			</div>
+
+
+			<!--MENU-->
+			<div class="menu-overlay overlay-slidedown">
+				<nav>
+					<ul>
+						<li><a href="#about" class="nav-btn">About</a></li>
+						<li><a href="#work" class="nav-btn">Work</a></li>
+						<li><a href="#experience" class="nav-btn">Experience</a></li>
+						<li><a href="#contact" class="nav-btn">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<nav class="main-nav">
+				<div class="navigation-desktop">
+					<ul class="menu-items">
+						<li><a class="menu-section" href="#about" >About</a></li>
+						<li><a class="menu-section"  href="#work" >Work</a></li>
+						<li><a class="menu-section" href="#experience" >Experience</a></li>
+						<li><a class="menu-section"  href="#contact" >Contact</a></li>
+					</ul>
+				</div>
+				<a id="trigger-nav" class="burger-menu" type="button"></a>
+			</nav>
+
 		</div>
 
-		<div class="page-section">
-			<div class="project-content">
-				<h2 class="h2">Project title presentation</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non eros erat. Phasellus varius leo eu egestas pellentesque. Vestibulum congue sem non placerat efficitur. Ut tincidunt ex nec convallis vulputate. Proin cursus in felis et congue. </p>
+			<!--LOGO-->
+			<a class="main-logo" href="#top-home" ></a>
 
-				<div class="video-container">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-					
-						
-							<!-- <center><iframe width="100%" height="56%" src="https://www.youtube.com/embed/rX6HCndygoQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></center> -->
-							<center><iframe src="http://player.vimeo.com/video/69817999?color=f2bc27 &title=0&byline=0&portrait=0" width="850" height="478" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
-						
-					
+		<script type="text/javascript">
+			$(function() {
+				var $wrapper = $('.theme-wrapper');
+			  	$('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				      	$wrapper.animate({
+				          scrollTop: target.offset().top+$wrapper[0].scrollTop
+				        }, 1000, "swing");
+				        return false;
+				      }
+				    }
+				});
+			});
+		</script>
 
-				</div>
+		<script type="text/javascript">
+			$ (document).ready(function(){
+				var $blocker = $('.menu-overlay');
 
-				<p>Praesent nec suscipit tellus, et vestibulum neque. Nullam rutrum, turpis eget faucibus fringilla, elit ligula dapibus est, eu tristique lectus diam consequat est. Quisque pulvinar quis justo sed pharetra. Donec mattis, nunc vel mattis tristique, dolor nibh laoreet dui, eget interdum velit justo sit amet neque. Vivamus justo justo, iaculis vel blandit ut, pulvinar a nulla. Donec non convallis mi. Aliquam consectetur diam eget lectus posuere, vitae finibus diam euismod. Nulla tempor aliquet nisi sed gravida.</p>
-				<p>Phasellus viverra lorem at laoreet rutrum. Quisque iaculis gravida imperdiet. Pellentesque augue dui, posuere in dolor non, suscipit facilisis erat. Sed condimentum dignissim nisl, eu porta velit venenatis id. </p>
+				$("#trigger-nav").click(function(){
+					$(".overlay-slidedown").toggleClass("open");
 
-				<br><br>
+					if($(".overlay-slidedown").hasClass('open')) {
+						$blocker.on('touchmove', onBlock);
+					}
+					else {
+						$blocker.off('touchmove', onBlock);
+					}
+				});
 
-				<img class="project-image" src="../img/projects/project-hero.jpg"></img>
+				$(".nav-btn").click(function(){
+					$(".overlay-slidedown").removeClass("open");
+					$blocker.off('touchmove', onBlock);
+				});
 
-				<h2 class="h2">First steps stage</h2>
-				<p>Praesent nec suscipit tellus, et vestibulum neque. Nullam rutrum, turpis eget faucibus fringilla, elit ligula dapibus est, eu tristique lectus diam consequat est. Quisque pulvinar quis justo sed pharetra. Donec mattis, nunc vel mattis tristique, dolor nibh laoreet dui, eget interdum velit justo sit amet neque. Vivamus justo justo, iaculis vel blandit ut, pulvinar a nulla. Donec non convallis mi. Aliquam consectetur diam eget lectus posuere, vitae finibus diam euismod. Nulla tempor aliquet nisi sed gravida.</p>
-			</div>
-			<div class="project-credits">
+				function onBlock(e) {
+					e.preventDefault();
+					return false;
+				}
 				
-				<h4 class="title-credits">Role</h4>
-				<p class="credit-details">Design, UX, Front End prototyping</p>
-				<h4 class="title-credits">Team involved</h4>
-				<p class="credit-details">Damon Mangos, Stephen Horner, Ferran Gimeno, Tom Dougherty</p>
-				<h4 class="title-credits">Agency</h4>
-				<p class="credit-details">Delete</p>
-				<h4 class="title-credits">Year</h4>
-				<p class="credit-details">2014</p>
-
-			</div>
-		</div>
-
-		<!-- RELATED PROJECTS -->
-			<div class="related-projects">
-				<h2>Related projects</h2>
-				<div class="related-projects-wrapper">
-					<li data-content="Text added on hover" class="related-project">
-						<!-- <img src="#"> Introduce image source--> 
-						<!-- <div class="overlay"></div> -->
-					</li>
-					<li class="related-project"></li>
-					<li class="related-project last-related"></li>
-				</div>
-			</div>
-
-		<!-- FOOTER -->
-		<div class="footer">
-			<p class="footer-credits">Hand coded and crafted with love by Ferran Gimeno (ferranhead) ®2015</p>
-		</div>
+			});
+		</script>
 
 
 	</body>
