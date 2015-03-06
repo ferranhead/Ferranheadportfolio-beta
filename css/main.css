@@ -1090,8 +1090,6 @@ list-style-type: none;
 	height: 68%;
 	display: block;
 	position: relative;
-	clear: both;
-	float: left;
 }
 
 .hero-project-wrapper {
@@ -1106,6 +1104,7 @@ list-style-type: none;
 	top: 0;
 	overflow: hidden;
 	background-position: middle middle;	
+
 }
 
 .main-project-title {
@@ -1216,8 +1215,8 @@ h4 {
 .related-projects {
 	width: 100%;
 	padding-top: 50px;
-	padding-bottom: 90px;
-	background-color: black;
+	/*padding-bottom: 90px;*/
+	background-color: #000;
 	position: relative;
 	display: inline-block;
 	color: white;
@@ -1233,13 +1232,21 @@ h4 {
 	.related-projects { height: 550px;}
 }*/
 
-.related-project {
+/*.related-project {
 	
 	width: 33%;
 	padding-top: 20%;
 	
-	background-color: red;
-	/*display: inline-block;*/
+	position: relative;
+	margin: auto;
+
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	overflow: hidden;
+
+	background-position: center;
+	background-size: cover;
 	float: left;
 
 	-webkit-transition: all .3s ease-in;
@@ -1248,10 +1255,10 @@ h4 {
 	transition: all .3s ease-in;
 }
 
-/*@media (max-width: 1100px) {
+@media (max-width: 1100px) {
 	.related-project { height: 180px; width: 25%; margin-left: 10px; margin-right: 10px;}
 }
-*/
+
 @media (max-width: 850px) and (min-width: 641px) {
 	.related-project { width: 60%; padding-top: 50%; margin: 0 auto; margin-bottom: 20px; float: none;}
 }
@@ -1259,7 +1266,7 @@ h4 {
 @media (max-width: 640px){
 	.related-project {width: 100%; padding-top: 80%; margin-bottom: 20px;}
 }
-
+*/
 .related-projects-wrapper {
 	margin-right: 50px;
 	margin-left: 50px;
@@ -1287,7 +1294,7 @@ h4 {
 .overlay:hover {
 	opacity: 1;
 }*/
-
+/*
 .related-project:before, .related-project:after {
 	position: absolute;
 	opacity:0;
@@ -1319,7 +1326,28 @@ h4 {
 .related-project:hover:after, .related-project:hover:before {
 	opacity: 1;
 }
+*/
 
+.related {
+	width: 33%;
+
+	background-position: center center;
+	background-size: cover;
+	float: left;
+
+	-webkit-transition: width .3s ease-in;
+	-moz-transition: width .3s ease-in;
+	-o-transition: width .3s ease-in;
+	transition: width .3s ease-in;	
+}
+
+@media (max-width: 1024px){
+	.related {width: 25%;}
+}
+
+@media (max-width: 1023px){
+	.related {width: 50%;}
+}
 
 
 
