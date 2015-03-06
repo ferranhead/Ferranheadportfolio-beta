@@ -46,6 +46,8 @@ p {
 	font-weight: normal;
 	line-height: 1.9em;
 	letter-spacing: 0.05em;
+	max-width: 850px;
+	margin: 0 auto;
 }
 
 .paragraph-margins {
