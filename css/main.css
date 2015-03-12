@@ -824,7 +824,7 @@ list-style-type: none;
 	transition: all .3s ease-in;
 }
 @media (max-width: 640px) {
-	.skills { flex-direction:column; -webkit-flex-direction:column; -moz-flex-direction:column; -ms-flex-direction:column; -ms-flex-direction:column; -o-flex-direction:column;}
+	.skills { margin-left: 0px; flex-direction:column; -webkit-flex-direction:column; -moz-flex-direction:column; -ms-flex-direction:column; -ms-flex-direction:column; -o-flex-direction:column;}
 }
 
 
@@ -858,6 +858,7 @@ list-style-type: none;
 	height: 10px;
 	border: 1px solid black;
 }
+
 
 .language-bar {
 	margin-top: -41px;
@@ -905,6 +906,16 @@ list-style-type: none;
 }
 
 
+@media (max-width: 640px) {
+	.bar-level-base { width: 100%;}
+	.language-bar {width: 90%;}
+	.webdesign-bar {width: 95%;}
+	.learning-bar {width: 100.5%}
+	.animation-bar {width: 90%;}
+	.ux-bar {width: 80%;}
+}
+
+
 /* CONTACT SECTION */
 
 .contact-bg {
@@ -923,14 +934,14 @@ list-style-type: none;
 }*/
 
 @media (min-width: 1024px){
-	.contact-bg {padding-bottom: 50px;}
+	.contact-bg {padding-bottom: 90px;}
 }
 
 /*@media (max-width: 640px){
 	.contact-bg {padding-bottom: 200px;}
 }*/
 
-.contact-content:before {
+.contact-content:after {
 	content: "";
 	display: block;
 	position: absolute;
