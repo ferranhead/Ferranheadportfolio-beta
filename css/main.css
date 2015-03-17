@@ -941,7 +941,7 @@ list-style-type: none;
 	.contact-bg {padding-bottom: 200px;}
 }*/
 
-.contact-content:after {
+.contact-bg:before {
 	content: "";
 	display: block;
 	position: absolute;
