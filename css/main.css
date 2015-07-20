@@ -68,7 +68,7 @@ list-style-type: none;
 .main-nav {
 	width:100%;
     height:60px;
-    background-color:#252525;
+    background-color:#171717;
     position:absolute;
     top:0;
     left:0;
@@ -123,6 +123,25 @@ list-style-type: none;
 }
 
 .menu-section:hover {
+	color: #E2EEF2;
+}
+
+.nav-back {
+	position: absolute;
+	float: right;
+	right: 20px;
+	top: 19px !important;
+	color: #6d6d6d;
+	/*padding-right: 30px;*/
+	text-decoration: none;
+
+	-webkit-transition: color .15s linear;
+	-moz-transition: color .15s linear;
+	-o-transition: color .15s linear;
+	transition: color .15s linear;
+}
+
+.nav-back:hover {
 	color: #E2EEF2;
 }
 
@@ -248,7 +267,7 @@ list-style-type: none;
 .footer {
 	width: 100%;
 	height: 75px;
-	background-color: #252525;
+	background-color: #171717;
 	display: table;
 	margin: 0 auto;
 	position: relative;
@@ -330,7 +349,7 @@ list-style-type: none;
 	font-weight: 700;
 	line-height: 1em;
 	padding-bottom: 25px;
-	letter-spacing: -1px;
+	letter-spacing: -0.04em;
 	
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
@@ -383,14 +402,15 @@ list-style-type: none;
 	background-color: #fff;
 }
 
-.h2{
+.h3{
 	font-size: 55px;
 	letter-spacing: -0.03em;
   	text-align: center;
+  	line-height: 1em;
 }
 
 @media (max-width: 768px) {
-	.h2 { font-size: 30px; }
+	.h3 { font-size: 30px; }
 }
 
 
@@ -402,6 +422,9 @@ list-style-type: none;
 
 @media (min-width: 1600px) {
 	#about { padding-bottom: 120px;}
+}
+@media (max-width: 460px) {
+	#about { padding-bottom: 20px;}
 }
 
 .about-content {
@@ -422,6 +445,9 @@ list-style-type: none;
 }
 @media (min-width: 1200px) {
 	.about-content { width: 60%; }
+}
+@media (max-width: 460px) {
+	.about-content { padding-top: 20px;}
 }
 
 .description-about {
@@ -489,6 +515,17 @@ list-style-type: none;
 .work-bg {
 	background-color: #00090B;
 	padding-bottom: 90px;
+}
+@media (max-width: 460px) {
+	.work-bg {padding-bottom: 0px;}
+}
+
+.selected-works-title {
+	color: #fff; 
+	padding-top: 90px;
+}
+@media (max-width: 460px) {
+	.selected-works-title { padding-top: 40px;}
 }
 
 .work-section {
@@ -782,6 +819,11 @@ list-style-type: none;
 	-o-transition: all .3s ease-in;
 	transition: all .3s ease-in;
 }
+
+@media (max-width: 460px) {
+	.experience-content { padding-top: 20px; }
+}
+
 @media (max-width: 1024px) {
 	.experience-content { width: 80%; }
 }
@@ -939,6 +981,10 @@ list-style-type: none;
 	.contact-bg { padding-bottom: 90px; }
 }*/
 
+@media (max-width: 460px){
+	.contact-bg {padding-bottom: 20px;}
+}
+
 @media (min-width: 1024px){
 	.contact-bg {padding-bottom: 90px;}
 }
@@ -971,6 +1017,11 @@ list-style-type: none;
 	-o-transition: all .3s ease-in;
 	transition: all .3s ease-in;
 }
+
+@media (max-width: 460px) {
+	.contact-content { padding-top: 40px; }
+}
+
 @media (max-width: 768px) {
 	.contact-content { width: 80%; }
 }
@@ -1133,8 +1184,8 @@ list-style-type: none;
 	display: table;
 	position: relative;
 	width: 100%;
-	height: 70%;
-	min-height: 500px;
+	/*height: 70%;*/
+	min-height: 530px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	right: 0;
@@ -1144,7 +1195,24 @@ list-style-type: none;
 
 }
 
-.main-project-title {
+@media (max-width: 460px) {
+	.hero-project-wrapper { min-height: 350px;}
+}
+
+.project-name {
+	padding-top: 40px;
+}
+
+.editorial-left {
+	text-align: center;
+	vertical-align: middle;
+}
+
+@media (max-width: 460px) {
+	.editorial-left {text-align: left; vertical-align: left;}
+}
+
+.h2{
 	position: relative;
 	display: block;
 	width: 70%;
@@ -1154,9 +1222,9 @@ list-style-type: none;
 	text-align: center;
 	vertical-align: middle;
 	font-weight: 700;
-	line-height: 1em;
+	line-height: 0.9em;
 	padding-bottom: 25px;
-	letter-spacing: -1px;
+	letter-spacing: -0.04em;
 
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
@@ -1164,10 +1232,10 @@ list-style-type: none;
 	transition: all .3s ease-in;
 }
 @media (min-width: 640px) and (max-width: 900px) {
-	.main-project-title { width: 80%; font-size: 50px;}
+	.h2{ width: 80%; font-size: 50px;}
 }
 @media (max-width: 639px) {
-	.main-project-title { width: 80%; font-size: 45px; }
+	.h2{ width: 80%; font-size: 45px; }
 }
 
 .project-content {
